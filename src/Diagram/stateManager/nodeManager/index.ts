@@ -53,7 +53,7 @@ export class NodeManager {
       n.x += e.x - this.state.uiState!.lastDragPosition!.x;
       n.y += e.y - this.state.uiState!.lastDragPosition!.y;
     }
-    this.state.uiState!.lastDragPosition = { ...e };
+    this.state.uiState!.lastDragPosition = { x: e.x, y: e.y };
     this.eventBus.publish(Events.DiagramEvents.RenderRequested);
   };
   movedNodes = () => {

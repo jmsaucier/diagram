@@ -9,6 +9,7 @@
     "module": "commonjs",
     "lib": ["es6","dom"],
     "strict": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "skipLibCheck": true
   }
 }

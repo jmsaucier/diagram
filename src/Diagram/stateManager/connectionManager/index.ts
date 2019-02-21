@@ -168,7 +168,7 @@ export class ConnectionManager {
       0.1,
       0.9
     );
-    this.state.uiState!.lastDragPosition = { ...e };
+    this.state.uiState!.lastDragPosition = { x: e.x, y: e.y };
     this.eventBus.publish(Events.DiagramEvents.RenderRequested);
   };
   movedLink = () => {
